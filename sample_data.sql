@@ -7,20 +7,6 @@ VALUES
     (4, 'CANADA', 'B');
 
 INSERT INTO
-    `order_items` (`order_id`, `product_id`, `quantity`)
-VALUES
-    (1, 1, 10),
-    (2, 2, 2),
-    (3, 3, 2);
-
-INSERT INTO
-    `orders` (`id`, `user_id`, `order_status`, `created_at`)
-VALUES
-    (1, 1, 'in_warehouse', '2022-05-03 09:04:24'),
-    (2, 1, 'delivering', '2022-05-03 09:04:34'),
-    (3, 2, 'in_warehouse', '2022-05-03 09:04:47');
-
-INSERT INTO
     `products` (
         `id`,
         `name`,
@@ -56,3 +42,17 @@ INSERT INTO
 VALUES
     (1, 'User 1', '2022-05-03 09:01:36', 1),
     (2, 'User 2', '2022-05-03 09:01:57', 2);
+
+INSERT INTO
+    `orders` (`id`, `user_id`, `order_status`, `created_at`)
+VALUES
+    (1, 1, 'in_warehouse', '2022-05-03 09:04:24'),
+    (2, 1, 'delivering', '2022-05-03 09:04:34'),
+    (3, 2, 'in_warehouse', '2022-05-03 09:04:47');
+
+INSERT INTO
+    `order_items` (`order_id`, `product_id`, `quantity`)
+VALUES
+    (1, 1, 10),
+    (2, 2, 2),
+    (3, 3, 2);

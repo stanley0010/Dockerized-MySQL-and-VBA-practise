@@ -1,5 +1,3 @@
-DROP DATABASE `init.sql`;
-
 CREATE DATABASE IF NOT EXISTS db;
 
 USE db;
@@ -53,3 +51,5 @@ CREATE TABLE db.order_items(
     FOREIGN KEY (order_id) REFERENCES orders(id) ON UPDATE CASCADE ON DELETE CASCADE,
     FOREIGN KEY (product_id) REFERENCES products(id) ON UPDATE CASCADE ON DELETE CASCADE
 );
+
+DROP DATABASE `init.sql`;
