@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  mysql:
+    container_name: mysql_container
+    build: .
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: init.sql
+    ports:
+      - 3306:3306
+  adminer:
+    container_name: adminer_container
+    image: adminer:latest
+    environment:
+      ADMINER_DEFAULT_SERVER: mysql
+    ports:
+      - 8080:8080
