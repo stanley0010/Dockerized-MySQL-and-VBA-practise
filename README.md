@@ -11,6 +11,7 @@
 
 - `init.sql` creates database and tables into the MySQL Server.
 - `sample_data.sql` pre-fills some data.
+- `GUI_excel.vb` is the code in `GUI_mysql.xlsm`.
 
 ## How to use
 
